@@ -1,2 +1,5 @@
 # emr-bridge-fhir
-An EMR Bridge Implementation for NextGen Beta API
+
+*Brought to you by [thePLAN](http://theplanworks.com) / BlueVertex*
+
+An EMR Bridge Implementation for HL7 FHIR API

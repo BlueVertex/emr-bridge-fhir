@@ -1,0 +1,41 @@
+{
+    "name": "bluevertex/emr-bridge-fhir",
+    "description": "An EMR Bridge Implementation for HL7 FHIR API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Fox",
+            "email": "matt.fox@thebluevertex.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../emr-bridge",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/contracts": "~5.5",
+        "illuminate/support": "~5.5",
+        "bluevertex/emr-bridge": "dev-master",
+        "kitetail/zttp": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlueVertex\\EMRBridgeFHIR\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlueVertex\\EMRBridgeFHIR\\EMRBridgeFHIRServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
